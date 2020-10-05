@@ -16,14 +16,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Bootstrap style -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
   <!-- Theme style -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
   <!-- Favicon and touch icons  -->
-  <link href="icon/favicon.png" rel="shortcut icon">
+  <link href="../icon/favicon.png" rel="shortcut icon">
 
 
 </head>
@@ -32,42 +32,35 @@
   <div class="boxed">
 
     <div id="preloader">
-			<div class="loader">
-				<img src="images/logo_preload.png" alt="">
-			</div>
-		</div>
+      <div class="loader">
+        <img src="../images/logo_preload.png" alt="">
+      </div>
+    </div>
 
     <header id="header">
-      <div class="header_wrap">
+      <div class="header_wrap header_admin">
         <div class="box_left">
           <div class="logo" id="logo">
             <a href="#">
-              <img src="images/logo_top.png" alt="">
+              <img src="../images/logo_top.png" alt="">
             </a>
           </div>
           <div id="mainnav" class="mainnav">
             <ul class="menu">
-              <li class="nav_home"><a href="#"><img src="images/ico_home.png" alt=""> Trang chủ</a></li>
-              <li class="nav_product"><a href="#"><img src="images/ico_nav_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_product.png" class="sp-only" alt=""> HÀNG HÓA</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> QUẢN LÝ ĐƠN HÀNG</a></li>
+              <li class="nav_home"><a href="#"><img src="../images/ico_home.png" alt=""> Trang chủ</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_product.png" class="sp-only" alt=""> QL HÀNG HÓA</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_product.png" class="sp-only" alt=""> QL Danh MỤC HÀNG HÓA</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="../images/ico_user.png" class="pc-only" alt=""><img src="../images/sp_ico_user.png" class="sp-only" alt=""> QL Người dùng</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> LỊCH SỬ GIAO DỊCH</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="../images/ico_setting.png" class="pc-only" alt=""><img src="../images/sp_ico_setting.png" class="sp-only" alt=""> CÀI ĐẶT HỆ THỐNG</a></li>
             </ul>
           </div>
+
         </div>
         <div class="box_right">
-          <div class="create_product">
-            <a href="#"><img src="images/ico_create_product.png" class="pc-only" alt=""><img src="images/sp_ico_create_product.png" class="sp-only" alt=""> TẠO ĐƠN HÀNG</a>
-          </div>
-          <div class="shop_cart">
-            <a href="#">
-              <div class="box_cart">
-                <img src="images/ico_shop_cart.png" alt=""> <span class="numb_cart">5</span>
-              </div>
-              <span class="text">Hàng hóa đã chọn</span>
-            </a>
-          </div>
           <div class="info_account">
             <div class="notification">
-              <img src="images/ico_info_account.png" alt="">
+              <img src="../images/ico_info_account.png" alt="">
               <span class="numb_noti">2</span>
               <ul class="box_notification">
                 <li>
@@ -85,10 +78,7 @@
               </ul>
             </div>
             <div class="box_account">
-              <span class="name">Nguyễn Văn A</span>
-              <div class="img_acc">
-                <img src="images/account.png" alt="">
-              </div>
+              <span class="name">Admin</span>
               <ul class="menu_account">
                 <li>
                   <a href="#">Thông tin tài khoản</a>
@@ -111,20 +101,33 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
+              <div class="top_order_status">
+                <div class="code_order">
+                  Mã đơn hàng <span class="code">0865834321</span>
+                </div>
+                <div class="status_container">
+                  <div class="btn_send_message">
+                    <a href="#"><img src="../images/ico_message.png" alt=""> Nhắn tin với nhân viên tư vấn</a>
+                  </div>
+                  <div class="status">
+                    <span>Đang mua hàng</span>
+                  </div>
+                </div>
+              </div>
               <div class="checkout_container">
                 <div class="title_archive">
-                  Các hàng hóa đã chọn
+                  Danh sách hàng hóa có sẵn
                 </div>
                 <div class="checkout_content">
                   <div class="products_checkout">
                     <div class="pro_checkout_item">
                       <div class="pro_info">
                         <div class="img_pro">
-                          <img src="images/pro_01.png" alt="">
+                          <img src="../images/pro_01.png" alt="">
                         </div>
                         <div class="info_pro">
                           <h4>
-                            <a href="single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                            <a href="../single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
                           </h4>
                           <div class="price">
                             <strong class="text-red">52 ¥ - 100,000 vnđ</strong>
@@ -134,22 +137,12 @@
                       <div class="quanlity_weight">
                         <div class="quantity">
                           <label for="quantity_cart">Số lượng</label>
-                          <div class="codelab_quantity">
-                            <a href="#" class="minus">
-                              <img src="images/minus.png" alt="">
-                            </a>
-                            <input type="number" id="quantity_cart" class="input-text qty text" min="1" max="" value="1" name="quantity" />
-                            <a href="#" class="plus">
-                              <img src="images/plus.png" alt="">
-                            </a>
-                          </div>
+                          <p><strong>5</strong></p>
                         </div>
                         <div class="weight_product">
                           <label for="weight_cart">Trọng lượng</label>
                           <div class="codelab_quantity">
-                            <div class="weight_cart">
-                              <strong class="weight">1.5</strong><span class="unit">kg</span>
-                            </div>
+                            <strong>1.5</strong> kg
                           </div>
                         </div>
                       </div>
@@ -174,21 +167,16 @@
                           <p>Quy đổi VNĐ</p>
                           <strong class="text-red">300,000 vnđ</strong>
                         </div>
-                      </div>
-                      <div class="delete_pro">
-                        <a href="#" class="delete">
-                          <span class="icon"><img src="images/ico_delete.png" alt=""></span>Xóa
-                        </a>
                       </div>
                     </div>
                     <div class="pro_checkout_item">
                       <div class="pro_info">
                         <div class="img_pro">
-                          <img src="images/pro_02.png" alt="">
+                          <img src="../images/pro_02.png" alt="">
                         </div>
                         <div class="info_pro">
                           <h4>
-                            <a href="single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                            <a href="../single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
                           </h4>
                           <div class="price">
                             <strong class="text-red">52 ¥ - 100,000 vnđ</strong>
@@ -199,21 +187,13 @@
                         <div class="quantity">
                           <label for="quantity_cart">Số lượng</label>
                           <div class="codelab_quantity">
-                            <a href="#" class="minus">
-                              <img src="images/minus.png" alt="">
-                            </a>
-                            <input type="number" id="quantity_cart" class="input-text qty text" min="1" max="" value="1" name="quantity" />
-                            <a href="#" class="plus">
-                              <img src="images/plus.png" alt="">
-                            </a>
+                            <p><strong>5</strong></p>
                           </div>
                         </div>
                         <div class="weight_product">
                           <label for="weight_cart">Trọng lượng</label>
                           <div class="codelab_quantity">
-                            <div class="weight_cart">
-                              <strong class="weight">1.5</strong><span class="unit">kg</span>
-                            </div>
+                            <strong>1.5</strong> kg
                           </div>
                         </div>
                       </div>
@@ -238,21 +218,16 @@
                           <p>Quy đổi VNĐ</p>
                           <strong class="text-red">300,000 vnđ</strong>
                         </div>
-                      </div>
-                      <div class="delete_pro">
-                        <a href="#" class="delete">
-                          <span class="icon"><img src="images/ico_delete.png" alt=""></span>Xóa
-                        </a>
                       </div>
                     </div>
                     <div class="pro_checkout_item">
                       <div class="pro_info">
                         <div class="img_pro">
-                          <img src="images/pro_03.png" alt="">
+                          <img src="../images/pro_03.png" alt="">
                         </div>
                         <div class="info_pro">
                           <h4>
-                            <a href="single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                            <a href="../single-product.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
                           </h4>
                           <div class="price">
                             <strong class="text-red">52 ¥ - 100,000 vnđ</strong>
@@ -262,22 +237,12 @@
                       <div class="quanlity_weight">
                         <div class="quantity">
                           <label for="quantity_cart">Số lượng</label>
-                          <div class="codelab_quantity">
-                            <a href="#" class="minus">
-                              <img src="images/minus.png" alt="">
-                            </a>
-                            <input type="number" id="quantity_cart" class="input-text qty text" min="1" max="" value="1" name="quantity" />
-                            <a href="#" class="plus">
-                              <img src="images/plus.png" alt="">
-                            </a>
-                          </div>
+                          <p><strong>5</strong></p>
                         </div>
                         <div class="weight_product">
                           <label for="weight_cart">Trọng lượng</label>
                           <div class="codelab_quantity">
-                            <div class="weight_cart">
-                              <strong class="weight">1.5</strong><span class="unit">kg</span>
-                            </div>
+                            <strong>1.5</strong> kg
                           </div>
                         </div>
                       </div>
@@ -302,105 +267,54 @@
                           <p>Quy đổi VNĐ</p>
                           <strong class="text-red">300,000 vnđ</strong>
                         </div>
-                      </div>
-                      <div class="delete_pro">
-                        <a href="#" class="delete">
-                          <span class="icon"><img src="images/ico_delete.png" alt=""></span>Xóa
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="totals_checkout">
-                    <div class="text_totals">
-                      Tổng cộng
-                    </div>
-                    <dl class="dl_info">
-                      <dt>Quy cách đóng thùng:</dt>
-                      <dd>48 cái/thùng</dd>
-                      <dt>Kích thước (cao x dài x rộng) </dt>
-                      <dd>15 m3</dd>
-                      <dt>Thể tích (cao x dài x rộng)/1000.000</dt>
-                      <dd>4 l</dd>
-                      <dt>Trọng lượng: </dt>
-                      <dd>2 kg</dd>
-                      <dt>Phí vận chuyển:</dt>
-                      <dd><strong class="text-red">1.5 ¥</strong></dd>
-                    </dl>
-                    <div class="total_price">
-                      <div class="total_jp">
-                        <p>Giá tổng</p>
-                        <strong class="text-red">52 ¥</strong>
-                      </div>
-                      <div class="total_vi">
-                        <p>Quy đổi VNĐ</p>
-                        <strong class="text-red">300,000 vnđ</strong>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="info_checkout_container">
+              <div class="purchase_information toggle_container">
                 <div class="title_archive">
-                  Thông tin mua hàng
-                </div>
-                <div class="info_checkout">
-                  <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Họ và tên</label>
-                        <input type="text" name="name" value="Nguyễn Văn A">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Số điện thoại</label>
-                        <input type="tel" name="phone" value="09052132222">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input_field">
-                        <label>Địa chỉ liên hệ</label>
-                        <input type="text" name="address" value="315 Hùng Vương, Tp. Hà Nội">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input_field">
-                        <label>Địa chỉ nhận hàng</label>
-                        <input type="text" name="address-2" value="315 Hùng Vương, Tp. Hà Nội">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Ngày muốn nhận</label>
-                        <input type="date" name="date" value="30/07/2020">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Cont</label>
-                        <select name="cont">
-                          <option value="rieng">Riêng</option>
-                          <option value="chung">Chung</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Bảo hiểm</label>
-                        <select name="insurrance">
-                          <option value="rieng">Riêng</option>
-                          <option value="chung">Chung</option>
-                        </select>
-                      </div>
-                    </div>
+                  <span>Thông tin mua hàng</span>
+                  <div class="toggle_btn">
+                    <img src="../images/ico_toggle_b.png" alt="">
                   </div>
                 </div>
+                <div class="content_toggle">
+                  <ul class="purchase_information_list">
+                    <li>
+                      <h5>Họ và tên</h5>
+                      <p>Nguyễn Văn A</p>
+                    </li>
+                    <li>
+                      <h5>Số điện thoại</h5>
+                      <p>09052132222</p>
+                    </li>
+                    <li>
+                      <h5>Địa chỉ liên hệ</h5>
+                      <p>315 Hùng Vương, Tp. Hà Nội</p>
+                    </li>
+                    <li>
+                      <h5>Địa chỉ nhận hàng</h5>
+                      <p>315 Hùng Vương, Tp. Hà Nội</p>
+                    </li>
+                    <li>
+                      <h5>Ngày muốn nhận</h5>
+                      <p>30/07/2020</p>
+                    </li>
+                    <li>
+                      <h5>Cont</h5>
+                      <p>Riêng</p>
+                    </li>
+                    <li>
+                      <h5>Bảo hiểm</h5>
+                      <p>100%</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-
               <div class="box_checkout">
                 <div class="btn_checkout">
-                  <a href="thanh-cong.html">TIẾN HÀNH LÊN ĐƠN</a>
+                  <a href="bao-gia.html">BÁO GIÁ</a>
                 </div>
               </div>
             </div>
@@ -413,20 +327,20 @@
       <div class="footer_wrap">
         <div class="logo_ft">
           <a href="index.html">
-            <img src="images/logo_ft.png" alt="">
+            <img src="../images/logo_ft.png" alt="">
           </a>
         </div>
         <div class="contact_ft">
           <h5 class="title">THÔNG TIN LIÊN HỆ</h5>
           <ul class="contact_list">
             <li>
-              <img src="images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
+              <img src="../images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
             </li>
             <li>
-              <img src="images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
+              <img src="../images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
             </li>
             <li>
-              <img src="images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
+              <img src="../images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -435,8 +349,8 @@
 
   </div> <!-- /.boxed -->
 
-  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 

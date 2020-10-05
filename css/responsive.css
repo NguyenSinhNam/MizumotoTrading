@@ -49,6 +49,15 @@
   #header .header_admin #mainnav li {
     margin-left: 25px;
   }
+
+  .top_order_status {
+    display: block;
+  }
+
+  .top_order_status .code_order {
+    padding-right: 0;
+    margin-bottom: 12px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -353,6 +362,32 @@
   .toggle_button_filter .text {
     font-size: 13px;
     padding-right: 5px;
+  }
+
+  .top_order_status .status_container .counselor,
+  .top_order_status .status_container .btn_send_message {
+    margin-right: 0;
+  }
+
+  .counselor {
+    display: block;
+    width: 100%;
+  }
+
+  .counselor h5 {
+    margin-bottom: 5px;
+  }
+
+  .counselor select {
+    width: 100%;
+  }
+
+  .top_order_status .code_order {
+    font-size: 16px;
+  }
+
+  .btn_send_message a {
+    font-size: 12px;
   }
 
 }
