@@ -25,7 +25,6 @@
   <!-- Favicon and touch icons  -->
   <link href="../icon/favicon.png" rel="shortcut icon">
 
-
 </head>
 
 <body>
@@ -97,111 +96,81 @@
     </header>
 
     <div id="main_content" class="main_content">
-      <section class="sec_list_order">
+      <section class="sec_checkout">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 filter_container">
-              <div class="top_search">
-                <form class="form_search" action="index.html" method="post">
-                  <input type="text" name="search" placeholder="Tìm kiếm...">
-                  <button type="submit" name="btn-search"><img src="../images/search.png" alt=""></button>
-                </form>
-              </div>
-              <div class="filter_status">
-                <h5>LỌC THEO TRẠNG THÁI</h5>
-                <select name="filter_status">
-                  <option value="">TẤT CẢ</option>
-                  <option value="">TẤT CẢ</option>
-                  <option value="">TẤT CẢ</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-md-12">
-              <div class="list_order_container">
+              <div class="top_title">
+                <h3>Nguyễn Văn A</h3>
+              </div>
+              <div class="info_checkout_container">
                 <div class="title_archive">
-                  Danh sách đơn hàng
+                  Thông tin tài khoản
                 </div>
-                <div class="content_list_order">
-                  <div class="table_order">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>MÃ ĐƠN HÀNG</th>
-                          <th>Mã Jancode</th>
-                          <th>NGÀY LÊN ĐƠN</th>
-                          <th>LOẠI CONT</th>
-                          <th class="text-center">QUY CÁCH <br />ĐÓNG THÙNG</th>
-                          <th>Số lượng</th>
-                          <th>ĐƠN GIÁ</th>
-                          <th class="text-center">NGÀY DỰ KIẾN <br />LÊN CONT</th>
-                          <th>TRẠNG THÁI</th>
-                          <th>Nhân viên tư vấn</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="code">
-                              0865834321
-                            </div>
-                          </td>
-                          <td>
-                            <div class="jancode">
-                              J324325
-                            </div>
-                          </td>
-                          <td>20-07-2020</td>
-                          <td>Riêng</td>
-                          <td>24 cái/thùng</td>
-                          <td>4</td>
-                          <td>25,3214,000 vnđ</td>
-                          <td>20-07-2020</td>
-                          <td>
-                            <div class="status watting">
-                              <span>Đang khởi tạo</span>
-                            </div>
-                          </td>
-                          <td>
-                            <select name="staff">
-                              <option value="">-chọn-</option>
-                              <option value="">Nguyễn Thị Vy</option>
-                              <option value="">Nguyễn Thị Vi</option>
-                            </select>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="info_checkout">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Họ và tên</label>
+                        <input type="text" name="name" value="Nguyễn Văn A">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>EMAIL</label>
+                        <input type="email" name="email" value="anguyenvan@gmail.com">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Số điện thoại</label>
+                        <input type="tel" name="phone" value="09052132222">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Vai trò</label>
+                        <select name="option">
+                          <option>Khách hàng</option>
+                          <option>Khách hàng</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="input_field">
+                        <label>Địa chỉ liên hệ</label>
+                        <input type="text" name="address" value="315 Hùng Vương, Tp. Hà Nội">
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="sec_pagination">
-                  <ul class="pagination_list">
-                    <li class="prev">
-                      <a href="#"><img src="../images/ico_prev.png" alt=""></a>
-                    </li>
-                    <li class="active">
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">4</a>
-                    </li>
-                    <li>
-                      <a href="#">5</a>
-                    </li>
-                    <li class="next">
-                      <a href="#"><img src="../images/ico_next.png" alt=""></a>
-                    </li>
-                  </ul>
+                  <div class="check_change_pass">
+                    <div for="change_pass" class="change_pass">
+                      <input type="checkbox" id="change_pass" name="change_pass" />
+                      <span class="checked"></span> Đổi mật khẩu
+                    </div>
+                    <div class="row box_change_pass">
+                      <div class="col-md-6 col-lg-3">
+                        <div class="input_field">
+                          <label>Mật khẩu mới</label>
+                          <input type="password" name="password" value="************">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="input_field">
+                          <label>Nhập lại mật khẩu mới</label>
+                          <input type="password" name="re-password" value="************">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
+              <div class="box_checkout">
+                <div class="btn_checkout">
+                  <a href="#">CẬP NHẬT</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

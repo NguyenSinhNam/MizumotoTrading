@@ -1786,6 +1786,10 @@ h4 {
   height: 40px;
 }
 
+.info_checkout .input_field textarea {
+  height: 120px;
+}
+
 .btn_checkout a {
   display: inline-block;
   padding: 14.5px 36px;
@@ -1976,7 +1980,7 @@ h4 {
 .purchase_information {
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.07);
-  border-radius: 3px;
+  border-radius: 9px;
   margin-top: 23px;
 }
 
@@ -2112,6 +2116,42 @@ h4 {
 }
 
 /* sec_list_order */
+.sec_list_order .filter_container .top_search {
+  width: calc(100% - 350px);
+}
+
+.filter_status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 22px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 9px;
+  width: 330px;
+  margin-left: 20px;
+}
+
+.filter_status h5 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.filter_status select {
+  width: auto;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  height: 20px;
+  padding: 0;
+  color: #000000;
+}
+
 .sec_list_order {
   padding-bottom: 35px;
 }
@@ -2124,6 +2164,14 @@ h4 {
 
 .list_order_container .content_list_order .table_order {
   padding: 0 24px;
+}
+
+.table_order {
+  overflow-y: auto;
+}
+
+.table_order table {
+  min-width: 1300px;
 }
 
 .table_order table thead th {
@@ -2162,17 +2210,177 @@ h4 {
 .table_order .status {
   background: #FFF0C9;
   border-radius: 50px;
-  padding: 8px 26px;
+  padding: 8px 20px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #705205;
+  text-align: center;
+}
+
+.table_order .of_stock {
+  color: #953E00;
+  background: #FFD6B8;
+}
+
+.table_order .buying {
+  color: #0C3192;
+  background: #C9D8FF;
+}
+
+.table_order .confirm_buy {
+  color: #166385;
+  background: #C9EFFF;
+}
+
+.table_order .release {
+  color: #2C6400;
+  background: #C3FF94;
 }
 
 .table_order select {
   border-radius: 50px;
 }
 
+/* Change Pass */
+.top_title h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.check_change_pass>.change_pass {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 18px;
+  color: #333437;
+  padding-bottom: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check_change_pass .change_pass .checked {
+  display: inline-block;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #FEBE01;
+  border-radius: 3px;
+}
+
+.check_change_pass .change_pass input[type="checkbox"] {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.check_change_pass .change_pass.active .checked {
+  background: #FEBE01 url(../images/checked.png) center center no-repeat;
+}
+
+/* sec_order_manage */
+.sec_order_manage {
+  padding: 30px 0 35px;
+}
+
+.sec_order_manage .list_order_container {
+  margin-top: 20px;
+}
+
+.purchase_information_list .numb_order {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #0C3192;
+}
+
+.purchase_information_list .watting {
+  color: #006CD0;
+}
+
+.purchase_information_list .success {
+  color: #00A825;
+}
+
+.purchase_information_list .failure {
+  color: #C04E4E;
+}
+
+/* sec_list_user */
+.sec_list_user .add_new_ {
+  margin-left: 40px;
+}
+
+.sec_list_user .filter_container .top_search {
+  width: calc(100% - 290px);
+}
+
+.add_new_ a {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 16px;
+  width: 250px;
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  color: #FFFFFF;
+  background: #FEBE01;
+  box-shadow: 0px 2.94118px 5.88235px rgba(0, 0, 0, 0.079144);
+  border-radius: 4.41176px;
+}
+
+.add_new_ a:hover {
+  background-color: #EA8D16;
+}
+
+/* table_user */
+.table_user table {
+    min-width: 1000px;
+}
+
+.table_user td a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  vertical-align: middle;
+  padding: 8px 15px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.table_user td a:hover {
+  background-color: #FEBE01;
+  border-color: #FEBE01;
+}
+
+.table_user td a img {
+  padding-right: 3px;
+}
+
+.table_user th:last-child,
+.table_user td:last-child {
+  width: 340px;
+}
+
+/* table_insurrance */
+.table_insurrance th:last-child,
+.table_insurrance td:last-child {
+  width: 210px;
+}
 /* Preloader
 -------------------------------------------------------------- */
 #preloader {

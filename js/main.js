@@ -14,6 +14,18 @@ $(document).ready(function() {
     // $('.box_notification').slideToggle(300);
   });
 
+  // box_change_pass
+  $('.box_change_pass').hide();
+  $('.check_change_pass .change_pass').click(function() {
+    $(this).toggleClass('active');
+    $('.box_change_pass').slideToggle(300);
+  });
+
+  // Table User
+  $('.table_user .delete_col').click(function() {
+    $(this).closest('tr').remove();
+  });
+
   // Quanlity
   $('.codelab_quantity .minus').click(function(e) {
     var qty = $(this).closest('.codelab_quantity').find('#quantity_cart').val();

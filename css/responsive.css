@@ -1,4 +1,5 @@
 @media (max-width: 1470px) {
+
   #mainnav li,
   #header .header_admin #mainnav li {
     margin-left: 30px;
@@ -87,6 +88,11 @@
     display: block;
   }
 
+  .add_new_ a {
+    font-size: 15px;
+    padding: 11.5px;
+  }
+
   .sec_top {
     display: block;
   }
@@ -139,6 +145,11 @@
 
   .shop_cart:before, .info_account:before {
     content: none;
+  }
+
+  .filter_status {
+    padding: 12px 17px;
+    border-radius: 4px;
   }
 
   #header .header_wrap .box_left {
@@ -267,6 +278,24 @@
 }
 
 @media (max-width: 767px) {
+  .sec_list_user .add_new_ {
+    margin-left: 0;
+  }
+
+  .sec_list_order .filter_container {
+    display: block;
+  }
+
+  .sec_list_order .filter_container .top_search {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .filter_status {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .services_item {
     height: 210px;
   }
@@ -389,5 +418,4 @@
   .btn_send_message a {
     font-size: 12px;
   }
-
 }
