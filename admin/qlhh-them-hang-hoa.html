@@ -101,38 +101,115 @@
           <div class="row">
             <div class="col-md-12">
               <div class="top_title">
-                <h3>Thêm mới gói bảo hiểm</h3>
+                <h3>Thêm mới hàng hóa</h3>
               </div>
               <div class="info_checkout_container">
                 <div class="title_archive">
-                  Thông tin gói bảo hiểm
+                  Thông tin hàng hóa
                 </div>
-                <div class="info_checkout">
+                <form class="info_checkout" action="#">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input_field">
+                        <label>hình ảnh biểu tượng</label>
+                        <div class="upload">
+                          <div class="img_upload">
+                            <img src="#" id="image_upload_preview" alt="">
+                            <div class="delete_upload">
+                              <img src="../images/ico_close_upload.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload_file">
+                          <label for="upload">
+                            <img src="../images/ico_upload.png" alt=""> Upload hình
+                            <input type="file" name="upload" id="upload" />
+                          </label>
+                          <div class="note">
+                            <img src="../images/ico_note.png" alt=""> Hỗ trợ định dạng .jpg, .png, .svg với dung lượng không lớn hơn 1MB.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-md-6 col-lg-3">
                       <div class="input_field">
-                        <label>Tên gói bảo hiểm</label>
-                        <input type="text" name="insurrance" value="Gói bảo hiểm 3">
+                        <label>Tên hàng hóa</label>
+                        <input type="text" name="name-stock" value="Lorem ipsum dolor sit amet">
                       </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                       <div class="input_field">
-                        <label>Số % bảo hiểm</label>
-                        <input type="email" name="email" value="3">
+                        <label>Giá tiền (¥)</label>
+                        <input type="number" name="price-stock" class="text-right" value="50">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Đơn vị</label>
+                        <select name="unit-stock">
+                          <option value="">kg</option>
+                          <option value="">kg</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Quy cách đóng thùng (cái/thùng)</label>
+                        <input type="number" name="volume-stock" value="2">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Thể tích (m3)</label>
+                        <input type="number" name="packing-stock" value="15">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Trọng lượng (kg)</label>
+                        <input type="number" name="weight-stock" value="2">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>phí vận chuyển (¥)</label>
+                        <input type="number" class="text-right" name="cost-stock" value="15">
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="input_field">
                         <label>Nội dung mô tả</label>
-                        <textarea name="message">Lorem ipsum dolor sit amet</textarea>
+                        <textarea name="name">Lorem ipsum dolor sit amet</textarea>
                       </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
+
+              <div class="info_checkout_container">
+                <div class="title_archive">
+                  Thông tin chi tiết hàng hóa
+                </div>
+                <form class="info_checkout" action="#">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input_field input_detail_stock">
+                        <img src="../images/icon_inside.png" class="icon_inside" alt="">
+                        <textarea
+                          name="name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nulla at vehicula egestas. Nullam semper sem in scelerisque luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi nibh, placerat quis sapien vitae, rhoncus tempus mauris. Vestibulum ullamcorper, ante semper maximus efficitur, leo enim venenatis tellus, eu sodales leo nulla non quam. Nullam mollis lorem arcu, a hendrerit lacus ultricies in. Pellentesque consectetur vestibulum est, sit amet facilisis orci suscipit volutpat. Aenean vitae hendrerit metus. Mauris laoreet suscipit porta.
+
+Maecenas sed erat sapien. Nulla metus erat, fermentum ac turpis tempor, laoreet varius neque. Phasellus vestibulum massa suscipit, suscipit metus at, fermentum eros. Cras mollis imperdiet lacinia. Aenean id volutpat sapien, sed dictum libero. Duis iaculis nulla elit. Praesent ex nisl, suscipit eu tempus sed, tempus id sapien. Donec a diam quis magna ultrices interdum sit amet id eros. Duis porttitor posuere ante quis hendrerit. Fusce pellentesque tristique lacus, semper posuere risus auctor eget. Maecenas nisi tellus, ultrices quis dictum ut, consectetur vitae lacus. Morbi sem sapien, molestie id sagittis aliquet, dignissim quis augue.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
               <div class="box_mizu">
                 <div class="btn_mizu">
-                  <a href="#">THÊM GÓI BẢO HIỂM</a>
+                  <a href="#">THÊM HÀNG HÓA</a>
                 </div>
               </div>
             </div>

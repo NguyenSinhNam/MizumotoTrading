@@ -101,38 +101,50 @@
           <div class="row">
             <div class="col-md-12">
               <div class="top_title">
-                <h3>Thêm mới gói bảo hiểm</h3>
+                <h3>Thêm mới danh mục</h3>
               </div>
               <div class="info_checkout_container">
                 <div class="title_archive">
-                  Thông tin gói bảo hiểm
+                  Thông tin danh mục
                 </div>
-                <div class="info_checkout">
+                <form class="info_checkout" action="#">
                   <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Tên gói bảo hiểm</label>
-                        <input type="text" name="insurrance" value="Gói bảo hiểm 3">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                      <div class="input_field">
-                        <label>Số % bảo hiểm</label>
-                        <input type="email" name="email" value="3">
-                      </div>
-                    </div>
                     <div class="col-md-12">
                       <div class="input_field">
-                        <label>Nội dung mô tả</label>
-                        <textarea name="message">Lorem ipsum dolor sit amet</textarea>
+                        <label>hình ảnh biểu tượng</label>
+                        <div class="upload">
+                          <div class="img_upload">
+                            <img src="#" id="image_upload_preview" alt="">
+                            <div class="delete_upload">
+                              <img src="../images/ico_close_upload.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload_file">
+                          <label for="upload">
+                            <img src="../images/ico_upload.png" alt=""> Upload hình
+                            <input type="file" name="upload" id="upload" />
+                          </label>
+                          <div class="note">
+                            <img src="../images/ico_note.png" alt=""> Hỗ trợ định dạng .jpg, .png, .svg với dung lượng không lớn hơn 1MB.
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Tên danh mục</label>
+                        <input type="text" name="category" value="Tivi">
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
               <div class="box_mizu">
                 <div class="btn_mizu">
-                  <a href="#">THÊM GÓI BẢO HIỂM</a>
+                  <a href="#">THÊM DANH MỤC</a>
                 </div>
               </div>
             </div>

@@ -63,6 +63,29 @@ $(document).ready(function() {
     $(this).parent('li').toggleClass('active');
   });
 
+  // Upload file
+  $('.img_upload').hide();
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        $('#image_upload_preview').attr('src', e.target.result);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload").change(function() {
+    $('.img_upload').show(300);
+    readURL(this);
+  });
+
+  $(".img_upload .delete_upload").click(function() {
+    $('.img_upload').hide(300);
+    $('#image_upload_preview').attr('src', '#');
+  });
+
   // Responsive Menu
   var menuType = 'desktop';
 

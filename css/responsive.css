@@ -59,6 +59,10 @@
     padding-right: 0;
     margin-bottom: 12px;
   }
+
+  .sec_list_user .add_new_ {
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -294,6 +298,7 @@
   .filter_status {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 20px;
   }
 
   .services_item {
@@ -350,6 +355,11 @@
 
   .product_container .product_item {
     width: 50%;
+  }
+
+  .btn_mizu a {
+    padding: 11.5px 26px;
+    font-size: 14px;
   }
 }
 
