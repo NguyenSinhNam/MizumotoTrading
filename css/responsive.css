@@ -295,6 +295,10 @@
     margin-bottom: 15px;
   }
 
+  .sec_managed.sec_list_order .filter_container .top_search {
+    margin-bottom: 0;
+  }
+
   .filter_status {
     width: 100%;
     margin-left: 0;

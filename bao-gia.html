@@ -16,14 +16,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Bootstrap style -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
   <!-- Theme style -->
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   <!-- Favicon and touch icons  -->
-  <link href="../icon/favicon.png" rel="shortcut icon">
+  <link href="icon/favicon.png" rel="shortcut icon">
+
 
 </head>
 
@@ -32,34 +33,41 @@
 
     <div id="preloader">
       <div class="loader">
-        <img src="../images/logo_preload.png" alt="">
+        <img src="images/logo_preload.png" alt="">
       </div>
     </div>
 
     <header id="header">
-      <div class="header_wrap header_admin">
+      <div class="header_wrap">
         <div class="box_left">
           <div class="logo" id="logo">
             <a href="#">
-              <img src="../images/logo_top.png" alt="">
+              <img src="images/logo_top.png" alt="">
             </a>
           </div>
           <div id="mainnav" class="mainnav">
             <ul class="menu">
-              <li class="nav_home"><a href="#"><img src="../images/ico_home.png" alt=""> Trang chủ</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_product.png" class="sp-only" alt=""> QL HÀNG HÓA</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_product.png" class="sp-only" alt=""> QL Danh MỤC HÀNG HÓA</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="../images/ico_user.png" class="pc-only" alt=""><img src="../images/sp_ico_user.png" class="sp-only" alt=""> QL Người dùng</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="../images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="../images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> LỊCH SỬ GIAO DỊCH</a></li>
-              <li class="nav_manage_product"><a href="#"><img src="../images/ico_setting.png" class="pc-only" alt=""><img src="../images/sp_ico_setting.png" class="sp-only" alt=""> CÀI ĐẶT HỆ THỐNG</a></li>
+              <li class="nav_home"><a href="#"><img src="images/ico_home.png" alt=""> Trang chủ</a></li>
+              <li class="nav_product"><a href="#"><img src="images/ico_nav_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_product.png" class="sp-only" alt=""> HÀNG HÓA</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> QUẢN LÝ ĐƠN HÀNG</a></li>
             </ul>
           </div>
-
         </div>
         <div class="box_right">
+          <div class="create_product">
+            <a href="#"><img src="images/ico_create_product.png" class="pc-only" alt=""><img src="images/sp_ico_create_product.png" class="sp-only" alt=""> TẠO ĐƠN HÀNG</a>
+          </div>
+          <div class="shop_cart">
+            <a href="#">
+              <div class="box_cart">
+                <img src="images/ico_shop_cart.png" alt=""> <span class="numb_cart">5</span>
+              </div>
+              <span class="text">Hàng hóa đã chọn</span>
+            </a>
+          </div>
           <div class="info_account">
             <div class="notification">
-              <img src="../images/ico_info_account.png" alt="">
+              <img src="images/ico_info_account.png" alt="">
               <span class="numb_noti">2</span>
               <ul class="box_notification">
                 <li>
@@ -77,7 +85,10 @@
               </ul>
             </div>
             <div class="box_account">
-              <span class="name">Admin</span>
+              <span class="name">Nguyễn Văn A</span>
+              <div class="img_acc">
+                <img src="images/account.png" alt="">
+              </div>
               <ul class="menu_account">
                 <li>
                   <a href="#">Thông tin tài khoản</a>
@@ -107,7 +118,7 @@
                 </div>
                 <div class="status_container">
                   <div class="btn_send_message">
-                    <a href="#"><img src="../images/ico_message.png" alt=""> Nhắn tin</a>
+                    <a href="#"><img src="images/ico_message.png" alt=""> Nhắn tin</a>
                   </div>
                   <div class="status">
                     <span>Đang mua hàng</span>
@@ -119,7 +130,7 @@
                 <div class="title_archive">
                   <span>Đặt hàng theo yêu cầu</span>
                   <div class="toggle_btn">
-                    <img src="../images/ico_toggle_b.png" alt="">
+                    <img src="images/ico_toggle_b.png" alt="">
                   </div>
                 </div>
                 <div class="info_checkout content_toggle">
@@ -129,7 +140,7 @@
                         <label>hình ảnh</label>
                         <div class="uploaded">
                           <div class="img_upload">
-                            <img src="../images/pro_01.png" id="image_upload_preview" alt="">
+                            <img src="images/pro_01.png" id="image_upload_preview" alt="">
                           </div>
                         </div>
                       </div>
@@ -202,7 +213,7 @@
                 <div class="title_archive">
                   <span>Thông tin mua hàng</span>
                   <div class="toggle_btn">
-                    <img src="../images/ico_toggle_b.png" alt="">
+                    <img src="images/ico_toggle_b.png" alt="">
                   </div>
                 </div>
                 <div class="content_toggle">
@@ -239,11 +250,75 @@
                 </div>
               </div>
 
-              <div class="box_mizu">
-                <div class="btn_mizu">
-                  <a href="#">BÁO GIÁ</a>
+              <div class="info_checkout_container toggle_container">
+                <div class="title_archive">
+                  <span>MTZ Tranding Báo giá</span>
+                  <div class="toggle_btn">
+                    <img src="images/ico_toggle_b.png" alt="">
+                  </div>
+                </div>
+                <div class="info_checkout content_toggle">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Tổng trọng lượng (kg)</label>
+                        <p>4.5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>chiều dài (cm)</label>
+                        <p>20</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>chiều rộng (cm)</label>
+                        <p>10</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>chiều cao (cm)</label>
+                        <p>10</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Tổng thể tích</label>
+                        <p>2000</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Ngày nhận hàng</label>
+                        <p>22/09/2020</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>giá vận chuyển (¥)</label>
+                        <p>3</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Phí vận chuyển (¥)</label>
+                        <p>3</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="box_mizu">
+                <div class="btn_mizu">
+                  <a href="#">XÁC NHẬN</a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -254,20 +329,20 @@
       <div class="footer_wrap">
         <div class="logo_ft">
           <a href="index.html">
-            <img src="../images/logo_ft.png" alt="">
+            <img src="images/logo_ft.png" alt="">
           </a>
         </div>
         <div class="contact_ft">
           <h5 class="title">THÔNG TIN LIÊN HỆ</h5>
           <ul class="contact_list">
             <li>
-              <img src="../images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
+              <img src="images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
             </li>
             <li>
-              <img src="../images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
+              <img src="images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
             </li>
             <li>
-              <img src="../images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
+              <img src="images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -276,8 +351,8 @@
 
   </div> <!-- /.boxed -->
 
-  <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

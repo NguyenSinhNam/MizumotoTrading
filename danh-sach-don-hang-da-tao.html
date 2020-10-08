@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <title>Mizumoto Trading</title>
+
+  <meta name="author" content="Mizumoto Trading">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <!-- Favicon and touch icons  -->
+  <link href="icon/favicon.png" rel="shortcut icon">
+
+
+</head>
+
+<body>
+  <div class="boxed">
+
+    <div id="preloader">
+      <div class="loader">
+        <img src="images/logo_preload.png" alt="">
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="header_wrap">
+        <div class="box_left">
+          <div class="logo" id="logo">
+            <a href="#">
+              <img src="images/logo_top.png" alt="">
+            </a>
+          </div>
+          <div id="mainnav" class="mainnav">
+            <ul class="menu">
+              <li class="nav_home"><a href="#"><img src="images/ico_home.png" alt=""> Trang chủ</a></li>
+              <li class="nav_product"><a href="#"><img src="images/ico_nav_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_product.png" class="sp-only" alt=""> HÀNG HÓA</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> QUẢN LÝ ĐƠN HÀNG</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box_right">
+          <div class="create_product">
+            <a href="#"><img src="images/ico_create_product.png" class="pc-only" alt=""><img src="images/sp_ico_create_product.png" class="sp-only" alt=""> TẠO ĐƠN HÀNG</a>
+          </div>
+          <div class="shop_cart">
+            <a href="#">
+              <div class="box_cart">
+                <img src="images/ico_shop_cart.png" alt=""> <span class="numb_cart">5</span>
+              </div>
+              <span class="text">Hàng hóa đã chọn</span>
+            </a>
+          </div>
+          <div class="info_account">
+            <div class="notification">
+              <img src="images/ico_info_account.png" alt="">
+              <span class="numb_noti">2</span>
+              <ul class="box_notification">
+                <li>
+                  <a href="#">Thông báo 01</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 02</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 01</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 02</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box_account">
+              <span class="name">Nguyễn Văn A</span>
+              <div class="img_acc">
+                <img src="images/account.png" alt="">
+              </div>
+              <ul class="menu_account">
+                <li>
+                  <a href="#">Thông tin tài khoản</a>
+                </li>
+                <li>
+                  <a href="#">Đăng xuất</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn-menu">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <div id="main_content" class="main_content">
+      <section class="sec_list_order sec_managed">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 filter_container">
+              <div class="top_search ">
+                <form class="form_search" action="index.html" method="post">
+                  <input type="text" name="search" placeholder="Tìm kiếm...">
+                  <button type="submit" name="btn-search"><img src="images/search.png" alt=""></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="list_order_container">
+                <div class="title_archive">
+                  Danh sách đơn hàng
+                </div>
+                <div class="content_list_order">
+                  <div class="table_order">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>MÃ ĐƠN HÀNG</th>
+                          <th>NGÀY LÊN ĐƠN</th>
+                          <th>LOẠI CONT</th>
+                          <th>QUY CÁCH ĐÓNG THÙNG</th>
+                          <th>ĐƠN GIÁ</th>
+                          <th>NGÀY DỰ KIẾN LÊN CONT</th>
+                          <th>TRẠNG THÁI</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status watting">
+                              <span>Đang khởi tạo</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status of_stock">
+                              <span>Hàng về Kho</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status buying">
+                              <span>Đang mua hàng</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status confirm_buy">
+                              <span>Đồng ý mua hàng</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status release">
+                              <span>Xuất hàng</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="code">
+                              0865834321
+                            </div>
+                          </td>
+                          <td>20-07-2020</td>
+                          <td>Riêng</td>
+                          <td>6 thùng</td>
+                          <td>25,3214,000 vnđ</td>
+                          <td>20-07-2020</td>
+                          <td>
+                            <div class="status watting">
+                              <span>Đang khởi tạo</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="sec_pagination">
+                  <ul class="pagination_list">
+                    <li class="prev">
+                      <a href="#"><img src="images/ico_prev.png" alt=""></a>
+                    </li>
+                    <li class="active">
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">4</a>
+                    </li>
+                    <li>
+                      <a href="#">5</a>
+                    </li>
+                    <li class="next">
+                      <a href="#"><img src="images/ico_next.png" alt=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <div class="footer_wrap">
+        <div class="logo_ft">
+          <a href="index.html">
+            <img src="images/logo_ft.png" alt="">
+          </a>
+        </div>
+        <div class="contact_ft">
+          <h5 class="title">THÔNG TIN LIÊN HỆ</h5>
+          <ul class="contact_list">
+            <li>
+              <img src="images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
+            </li>
+            <li>
+              <img src="images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
+            </li>
+            <li>
+              <img src="images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- /.boxed -->
+
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

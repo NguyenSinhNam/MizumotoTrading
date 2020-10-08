@@ -285,6 +285,26 @@ input[type="color"]:focus {
   box-shadow: none;
 }
 
+select:disabled,
+textarea:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="datetime"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="date"]:disabled,
+input[type="month"]:disabled,
+input[type="time"]:disabled,
+input[type="week"]:disabled,
+input[type="number"]:disabled,
+input[type="email"]:disabled,
+input[type="url"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="color"]:disabled {
+  background: #F6F6F6;
+  border: 1px solid #E1E2E6;
+}
+
 textarea {
   width: 100%;
   padding: 10px 15px;
@@ -1828,6 +1848,7 @@ h4 {
   background: #FEBE01;
   box-shadow: 0px 2.94118px 5.88235px rgba(0, 0, 0, 0.079144);
   border-radius: 4.41176px;
+  min-width: 260px;
 }
 
 .btn_mizu a:hover {
@@ -2153,7 +2174,7 @@ h4 {
   font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
-  padding: 8px 24px 8px 11px;
+  padding: 8px 15px;
   background: #53BC2D;
   border-radius: 5px;
   display: block;
@@ -2164,6 +2185,10 @@ h4 {
 }
 
 /* sec_list_order */
+.sec_managed.sec_list_order .filter_container .top_search {
+  width: 100%;
+}
+
 .sec_list_order .filter_container .top_search {
   width: calc(100% - 350px);
 }

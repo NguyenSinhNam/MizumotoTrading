@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <title>Mizumoto Trading</title>
+
+  <meta name="author" content="Mizumoto Trading">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <!-- Favicon and touch icons  -->
+  <link href="icon/favicon.png" rel="shortcut icon">
+
+
+</head>
+
+<body>
+  <div class="boxed">
+
+    <div id="preloader">
+      <div class="loader">
+        <img src="images/logo_preload.png" alt="">
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="header_wrap">
+        <div class="box_left">
+          <div class="logo" id="logo">
+            <a href="#">
+              <img src="images/logo_top.png" alt="">
+            </a>
+          </div>
+          <div id="mainnav" class="mainnav">
+            <ul class="menu">
+              <li class="nav_home"><a href="#"><img src="images/ico_home.png" alt=""> Trang chủ</a></li>
+              <li class="nav_product"><a href="#"><img src="images/ico_nav_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_product.png" class="sp-only" alt=""> HÀNG HÓA</a></li>
+              <li class="nav_manage_product"><a href="#"><img src="images/ico_nav_manage_product.png" class="pc-only" alt=""><img src="images/sp_ico_nav_manage_product.png" class="sp-only" alt=""> QUẢN LÝ ĐƠN HÀNG</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box_right">
+          <div class="create_product">
+            <a href="#"><img src="images/ico_create_product.png" class="pc-only" alt=""><img src="images/sp_ico_create_product.png" class="sp-only" alt=""> TẠO ĐƠN HÀNG</a>
+          </div>
+          <div class="shop_cart">
+            <a href="#">
+              <div class="box_cart">
+                <img src="images/ico_shop_cart.png" alt=""> <span class="numb_cart">5</span>
+              </div>
+              <span class="text">Hàng hóa đã chọn</span>
+            </a>
+          </div>
+          <div class="info_account">
+            <div class="notification">
+              <img src="images/ico_info_account.png" alt="">
+              <span class="numb_noti">2</span>
+              <ul class="box_notification">
+                <li>
+                  <a href="#">Thông báo 01</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 02</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 01</a>
+                </li>
+                <li>
+                  <a href="#">Thông báo 02</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box_account">
+              <span class="name">Nguyễn Văn A</span>
+              <div class="img_acc">
+                <img src="images/account.png" alt="">
+              </div>
+              <ul class="menu_account">
+                <li>
+                  <a href="#">Thông tin tài khoản</a>
+                </li>
+                <li>
+                  <a href="#">Đăng xuất</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn-menu">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <div id="main_content" class="main_content">
+      <section class="sec_checkout">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="top_order_status">
+                <div class="code_order">
+                </div>
+                <div class="status_container">
+                  <div class="btn_send_message">
+                    <a href="#"><img src="images/ico_message.png" alt=""> Nhắn tin</a>
+                  </div>
+                </div>
+              </div>
+
+              <form class="info_checkout_container" action="#">
+                <div class="title_archive">
+                  Đặt hàng theo yêu cầu
+                </div>
+                <div class="info_checkout">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input_field">
+                        <label>hình ảnh</label>
+                        <div class="upload">
+                          <div class="img_upload">
+                            <img src="images/pro_01.png" id="image_upload_preview" alt="">
+                            <div class="delete_upload">
+                              <img src="images/ico_close_upload.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload_file">
+                          <label for="upload">
+                            <img src="images/ico_upload.png" alt=""> Upload hình
+                            <input type="file" name="upload" id="upload" />
+                          </label>
+                          <div class="note">
+                            <img src="images/ico_note.png" alt=""> Hỗ trợ định dạng .jpg, .png, .svg với dung lượng không lớn hơn 1MB.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="input_field">
+                            <label>jancode</label>
+                            <input type="text" name="jancode-stock" value="FDKJ74D">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="input_field">
+                            <label>số lượng thùng</label>
+                            <input type="number" name="thung-stock" value="1">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="input_field">
+                            <label>kích thước thùng</label>
+                            <input type="number" name="name-stock" value="1">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="input_field">
+                            <label>số khối thùng</label>
+                            <input type="text" name="name-stock" value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="input_field">
+                          <label>Quy cách đóng thùng (cái/thùng)</label>
+                          <input type="number" name="volume-stock" value="5">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Số lượng (số thùng nhân với quy cách)</label>
+                        <input type="number" name="number-stock" value="5">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Giá mong muốn (¥)</label>
+                        <input type="number" name="price-stock" value="10">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Thành tiền (¥)</label>
+                        <input type="number" name="total-price-stock" value="50" disabled />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Tổng trọng lượng (kg)</label>
+                        <input type="number" name="weight-stock" value="2.5">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_submit_mzt">
+                  <button type="submit" name="submit-form">Thêm hàng hóa</button>
+                </div>
+              </form>
+
+              <form class="info_checkout_container" action="#">
+                <div class="title_archive">
+                  Thông tin mua hàng
+                </div>
+                <div class="info_checkout">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Họ và tên</label>
+                        <input type="text" name="name" value="Nguyễn Văn A">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Số điện thoại</label>
+                        <input type="tel" name="phone" value="09052132222">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_field">
+                        <label>Địa chỉ liên hệ</label>
+                        <input type="text" name="address" value="315 Hùng Vương, Tp. Hà Nội">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_field">
+                        <label>Địa chỉ nhận hàng</label>
+                        <input type="text" name="address-2" value="315 Hùng Vương, Tp. Hà Nội">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>NGÀY LÊN CONT</label>
+                        <input type="date" name="date" value="30/07/2020">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="input_field">
+                        <label>Cont</label>
+                        <select name="cont">
+                          <option value="rieng">Riêng</option>
+                          <option value="chung">Chung</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="box_mizu">
+                <div class="btn_mizu">
+                  <a href="#">TIẾN HÀNH LÊN ĐƠN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <div class="footer_wrap">
+        <div class="logo_ft">
+          <a href="index.html">
+            <img src="images/logo_ft.png" alt="">
+          </a>
+        </div>
+        <div class="contact_ft">
+          <h5 class="title">THÔNG TIN LIÊN HỆ</h5>
+          <ul class="contact_list">
+            <li>
+              <img src="images/ico_location.png" alt=""> Địa chỉ: 5-1-1 B Space Cube, Kizuri, Higashi Osaka, Osaka, Japan.
+            </li>
+            <li>
+              <img src="images/ico_phone.png" alt=""> HOTLINE: <a href="tel:+818050468886">+81 80-5046-8886</a>
+            </li>
+            <li>
+              <img src="images/ico_email.png" alt=""> EMAIL: <a href="mailto:mizumoto.trading@gmail.com">mizumoto.trading@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- /.boxed -->
+
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
