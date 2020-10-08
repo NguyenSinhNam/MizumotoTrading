@@ -1,16 +1,16 @@
 $(document).ready(function() {
   $('.menu_account').hide();
   $('.box_account').click(function() {
-    $('.menu_account').slideToggle(300);
+    $('.menu_account').slideToggle(400);
   });
 
   $('.box_notification').hide();
   $('.notification').click(function() {
-    $('.box_notification').slideToggle(300);
+    $('.box_notification').slideToggle(400);
   });
 
   $('.toggle_btn').click(function() {
-    $(this).closest('.toggle_container').find('.content_toggle').slideToggle(300);
+    $(this).closest('.toggle_container').find('.content_toggle').slideToggle(400);
     // $('.box_notification').slideToggle(300);
   });
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
   });
 
   // Upload file
-  $('.img_upload').hide();
+  $('#upload .img_upload').hide();
 
   function readURL(input) {
     if (input.files && input.files[0]) {

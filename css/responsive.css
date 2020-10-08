@@ -404,8 +404,13 @@
   }
 
   .top_order_status .status_container .counselor,
-  .top_order_status .status_container .btn_send_message {
+  .top_order_status .status_container .btn_send_message,
+  .top_order_status .status_container .status span,
+  .top_order_status .status_container .status,
+  .btn_exchange  {
     margin-right: 0;
+    width: 100%;
+    display: block;
   }
 
   .counselor {
@@ -427,5 +432,7 @@
 
   .btn_send_message a {
     font-size: 12px;
+    text-align: center;
+    width: 100%;
   }
 }

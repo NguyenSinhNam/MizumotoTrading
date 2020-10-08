@@ -1182,6 +1182,9 @@ h4 {
 }
 
 .title_archive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 18px;
@@ -1763,6 +1766,30 @@ h4 {
   border-radius: 3px;
 }
 
+.info_checkout_container .btn_submit_mzt {
+  padding: 20px;
+  border-top: 1px solid #ECEEF5;
+}
+
+.info_checkout_container .btn_submit_mzt button {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #EA8D16;
+  padding: 12px 20px;
+  background: linear-gradient(0deg, #F6F6F6 2.22%, #FFFFFF 98.44%);
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  display: inline-block;
+  width: auto;
+}
+
+.info_checkout_container .btn_submit_mzt button:hover {
+  background: linear-gradient(0deg, #DDDDDD 2.22%, #F6F6F6 98.44%);
+}
+
 .info_checkout {
   padding: 25px 20px 0;
 }
@@ -1778,6 +1805,7 @@ h4 {
   line-height: 18px;
   text-transform: uppercase;
   color: #333437;
+  display: block;
   margin-bottom: 6px;
 }
 
@@ -1984,13 +2012,7 @@ h4 {
   margin-top: 23px;
 }
 
-.purchase_information .title_archive {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.purchase_information .title_archive .toggle_btn {
+.title_archive .toggle_btn {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -2055,7 +2077,7 @@ h4 {
   padding-left: 12px;
 }
 
-.top_order_status .status_container .status {
+.top_order_status .status_container .status span {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 13px;
@@ -2064,17 +2086,42 @@ h4 {
   background: #C9D8FF;
   border-radius: 50px;
   padding: 8px 24px;
+  text-align: center;
+}
+
+.top_order_status .status_container .status.confirmed span {
+  background: #B6F7C4;
+  color: #039823;
 }
 
 .top_order_status .status_container .counselor,
-.top_order_status .status_container .btn_send_message {
+.top_order_status .status_container .btn_send_message,
+.btn_exchange {
   margin-right: 20px;
 }
 
 .top_order_status .status_container .status,
 .top_order_status .status_container .counselor,
-.top_order_status .status_container .btn_send_message {
+.top_order_status .status_container .btn_send_message,
+.btn_exchange {
   margin-bottom: 16px;
+}
+
+.btn_exchange a {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #05ACE0;
+  border-radius: 5px;
+  padding: 7px 31px 8px 12px;
+  display: block;
+  text-align: center;
+}
+
+.btn_exchange a img {
+  margin-right: 4px;
 }
 
 .counselor {
@@ -2109,6 +2156,7 @@ h4 {
   padding: 8px 24px 8px 11px;
   background: #53BC2D;
   border-radius: 5px;
+  display: block;
 }
 
 .btn_send_message a:hover {
@@ -2478,6 +2526,10 @@ h4 {
   border: 1px solid #EAEAEA;
 }
 
+.img_upload img {
+  max-height: 60px;
+}
+
 .img_upload .delete_upload {
   position: absolute;
   cursor: pointer;
@@ -2502,6 +2554,62 @@ h4 {
 .input_detail_stock textarea {
   min-height: 365px;
   padding-top: 40px;
+}
+
+/* history_container */
+.history_container .history_item {
+  padding: 20px 20px 20px 47px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history_container .history_item:last-child {
+  border-bottom: none;
+}
+
+.history_container .history_item:before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: 29px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #91AFDB;
+}
+
+.history_container .history_item .time strong {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333437;
+}
+
+.history_container .history_item p {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333437;
+  margin-bottom: 10px;
+}
+
+.more a {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: #FEBE01;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.more a:hover {
+  background-color: #EA8D16;
 }
 
 /* Preloader
