@@ -365,6 +365,37 @@
     padding: 11.5px 26px;
     font-size: 14px;
   }
+
+  .chatbox_container .header {
+    padding: 10px 15px;
+  }
+
+  .chatbox_container .header .logo img {
+    width: 180px;
+  }
+
+  .chatbox_container .header .text {
+    font-size: 16px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+
+  .chatbox_container .content_chat {
+    height: calc(100% - 115.5px);
+  }
+
+  .chatbox_container .content_chat .boxchat {
+    padding: 15px;
+  }
+
+  .chat_item .text_chat {
+    width: calc(100% - 51px);
+  }
+
+  .form_chat .input_field input {
+    height: 50px;
+    padding: 10px 55px 10px 15px
+  }
 }
 
 @media (max-width: 575px) {
@@ -411,7 +442,9 @@
   .top_order_status .status_container .btn_send_message,
   .top_order_status .status_container .status span,
   .top_order_status .status_container .status,
-  .btn_exchange  {
+  .btn_exchange,
+  .top_order_status .status_container > div,
+  .top_order_status .status_container > div:not(:last-child) {
     margin-right: 0;
     width: 100%;
     display: block;

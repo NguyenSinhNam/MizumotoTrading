@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  // chatbox_container
+  $('.chatbox_container').hide();
+  $('.btn_send_message a').click(function() {
+    $('.chatbox_container').slideToggle(300);
+  });
+
+  $('.chatbox_container .header .btn_close').click(function() {
+    $('.chatbox_container').hide();
+  })
+
   $('.menu_account').hide();
   $('.box_account').click(function() {
     $('.menu_account').slideToggle(400);

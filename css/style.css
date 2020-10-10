@@ -2077,6 +2077,10 @@ h4 {
   flex-wrap: wrap;
 }
 
+.top_order_status+.info_checkout_container {
+  margin-top: 0;
+}
+
 .top_order_status .status_container {
   display: flex;
   align-items: center;
@@ -2108,6 +2112,7 @@ h4 {
   border-radius: 50px;
   padding: 8px 24px;
   text-align: center;
+  display: block;
 }
 
 .top_order_status .status_container .status.confirmed span {
@@ -2117,14 +2122,16 @@ h4 {
 
 .top_order_status .status_container .counselor,
 .top_order_status .status_container .btn_send_message,
-.btn_exchange {
+.btn_exchange,
+.top_order_status .status_container>div:not(:last-child) {
   margin-right: 20px;
 }
 
 .top_order_status .status_container .status,
 .top_order_status .status_container .counselor,
 .top_order_status .status_container .btn_send_message,
-.btn_exchange {
+.btn_exchange,
+.top_order_status .status_container>div {
   margin-bottom: 16px;
 }
 
@@ -2136,13 +2143,23 @@ h4 {
   color: #FFFFFF;
   background: #05ACE0;
   border-radius: 5px;
-  padding: 7px 31px 8px 12px;
+  padding: 7px 18px 8px 16px;
   display: block;
   text-align: center;
 }
 
 .btn_exchange a img {
   margin-right: 4px;
+}
+
+.update_status select {
+  height: 31px;
+  padding: 0px 15px;
+  background: #FFFFFF;
+  border: 1px solid #ECEEF5;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
 }
 
 .counselor {
@@ -2635,6 +2652,146 @@ h4 {
 
 .more a:hover {
   background-color: #EA8D16;
+}
+
+/* chatbox_container */
+.chatbox_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #F1F8FB;
+  display: flex;
+flex-direction: column;
+}
+
+.chatbox_container .header {
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.05);
+}
+
+.chatbox_container .header .text {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 6px 0 6px 20px;
+  margin-left: 20px;
+  position: relative;
+  border-left: 1px solid #DEDEDE;
+  margin-right: auto;
+}
+
+.chatbox_container .header .btn_close {
+  cursor: pointer;
+}
+
+.chatbox_container .content_chat {
+  margin-bottom: auto;
+  height: calc(100% - 141px);
+  overflow-x: auto;
+}
+
+.chatbox_container .content_chat .boxchat {
+  padding: 30px;
+}
+
+.chatbox_container .content_chat .boxchat .chat_item {
+  display: flex;
+      align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.chatbox_container .content_chat .boxchat .chat_item:last-child {
+  margin-bottom: 0;
+}
+
+.chat_item .img {
+  width: 51px;
+}
+
+.chat_item .img img {
+  border-radius: 50%;
+}
+
+.chat_item .text_chat {
+  width: calc(695px - 51px);
+  max-width: 100%;
+  padding-left: 18px;
+}
+
+.chat_item .text_chat .name_chat .position {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.chat_item .text_chat .name_chat .name {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.chat_item .text_chat .text p {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 171.8%;
+  color: #000000;
+  padding: 10px 22px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 11px;
+}
+
+.chatbox_container .content_chat .boxchat .chat_item.chat_send {
+  flex-direction: row-reverse;
+}
+
+.chatbox_container .content_chat .boxchat .chat_item.chat_send .text_chat {
+  padding-left: 0;
+  padding-right: 18px;
+}
+
+.chat_item.chat_send .text_chat .name_chat .name {
+  padding: 16px;
+  text-align: right;
+}
+
+.chat_item.chat_send .text_chat .text p {
+  background-color: #52D1ED;
+  color: #fff;
+}
+
+.form_chat .input_field {
+  background: #FFFFFF;
+  border: 1px solid #B5CAD2;
+  position: relative;
+}
+
+.form_chat .input_field input {
+  height: 62px;
+  padding: 10px 60px 10px 30px;
+}
+
+.form_chat .input_field button {
+  background-color: transparent;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  padding: 0;
 }
 
 /* Preloader
