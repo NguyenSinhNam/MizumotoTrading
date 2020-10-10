@@ -6,8 +6,12 @@ $(document).ready(function() {
   });
 
   $('.chatbox_container .header .btn_close').click(function() {
-    $('.chatbox_container').hide();
-  })
+    $('.chatbox_container').slideToggle(300);
+  });
+
+  $('.nav_message a').click(function() {
+    $('.chatbox_container').slideToggle(300);
+  });
 
   $('.menu_account').hide();
   $('.box_account').click(function() {

@@ -367,21 +367,21 @@
   }
 
   .chatbox_container .header {
-    padding: 10px 15px;
+    padding: 19.3px 15px;
   }
 
   .chatbox_container .header .logo img {
-    width: 180px;
+    width: 155px;
   }
 
   .chatbox_container .header .text {
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 10px;
     margin-left: 10px;
   }
 
   .chatbox_container .content_chat {
-    height: calc(100% - 115.5px);
+    height: calc(100% - 128px);
   }
 
   .chatbox_container .content_chat .boxchat {

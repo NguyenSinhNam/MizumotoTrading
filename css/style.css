@@ -2291,11 +2291,15 @@ h4 {
   vertical-align: middle;
 }
 
-.table_order .code {
+.table_order .code a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #FEBE01;
+}
+
+.table_order .code a:hover {
+  text-decoration: underline;
 }
 
 .table_order .status {
@@ -2477,6 +2481,11 @@ h4 {
   font-size: 13px;
   line-height: 16px;
   color: #333333;
+}
+
+.table_user td .name_stock a:hover {
+  background-color: transparent;
+  color: #FEBE01;
 }
 
 .table_user td .name_stock a img {
@@ -2696,6 +2705,18 @@ flex-direction: column;
   margin-bottom: auto;
   height: calc(100% - 141px);
   overflow-x: auto;
+}
+
+.chatbox_container .content_chat::-webkit-scrollbar {
+  width: 7px;
+}
+
+.chatbox_container .content_chat::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.chatbox_container .content_chat::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
 
 .chatbox_container .content_chat .boxchat {
